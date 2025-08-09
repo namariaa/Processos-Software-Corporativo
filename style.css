@@ -63,6 +63,11 @@ section h4 {
     color: #34495e;
 }
 
+section h3 {
+    font-size: 1.1rem;
+    color: #34495e;
+}
+
 section p {
     font-size: 1rem;
     color: #555;
