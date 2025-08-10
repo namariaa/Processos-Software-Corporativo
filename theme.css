@@ -24,12 +24,6 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(100, 56, 24, 0.15) 0%,
-    rgba(255, 254, 203, 0.0) 35%,
-    rgba(100, 56, 24, 0.08) 100%
-  );
   pointer-events: none;
   z-index: -1;
 }
@@ -45,17 +39,13 @@ header {
   left: 0;
   z-index: 50;
   padding: 0.75rem 1rem !important;
-  background: linear-gradient(180deg, rgba(253, 211, 2, 0.6) 0%, rgba(252, 189, 24, 0.35) 100%);
   border-bottom: 1px solid rgba(211, 153, 2, 0.35);
-  backdrop-filter: saturate(1.2) blur(8px);
+  backdrop-filter: saturate(1.2) blur(6px);
 }
 
 header a {
   color: #1f1f1f !important;
-  background: rgba(255, 254, 203, 0.8);
-  border: 1px solid rgba(211, 153, 2, 0.35);
   padding: 0.35rem 0.8rem;
-  border-radius: 9999px;
   transition: all 180ms ease;
   text-decoration: none;
   font-weight: 600;
@@ -75,9 +65,6 @@ header a.active {
 }
 
 section {
-  background: rgba(255, 254, 203, 0.8);
-  border: 1px solid rgba(211, 153, 2, 0.25);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04), 0 12px 32px rgba(212, 153, 2, 0.06);
   padding: 1.5rem 1.25rem;
   margin-top: 1.5rem;
 }
@@ -88,19 +75,6 @@ section {
 
 #antigamente {
   margin-top: 8rem !important;
-}
-
-section h1 {
-  border: none !important;
-  color: var(--ink);
-  margin-bottom: 0.75rem;
-  line-height: 1.2;
-  display: inline-block;
-  position: relative;
-  background: linear-gradient(90deg, var(--honey), var(--amber));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 section h1::after {
@@ -129,7 +103,6 @@ section h3 {
 
 #atividades img {
   border: 1px solid rgba(211, 153, 2, 0.25);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04), 0 10px 24px rgba(100, 56, 24, 0.06);
   transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
